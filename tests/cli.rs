@@ -4,7 +4,7 @@ use assert_fs:: prelude::*;
 use std::process::Command;
 
 #[test]
-fn file_dosent_exist() -> Result<(), Box<dyn std::error::Error>> {
+fn file_doesnt_exist() -> Result<(), Box<dyn std::error::Error>> {
     let mut cmd = Command::cargo_bin("grrs")?;
 
     cmd.arg("foobar").arg("test/file/dosent/exist");
